@@ -1,7 +1,7 @@
 const express = require('express');
 const isDev = process.env.NODE_ENV === 'development';
 const ngrok = isDev && process.env.ENABLE_TUNNEL ? require('ngrok') : false;
-const port = require('./utils/port');
+const port = process.env.PORT || require('./utils/port');
 const logger = require('./utils/logger');
 
 

@@ -28,8 +28,6 @@ export const registeringReducer = () => {
 
 // Selectors
 
-const 
-
 // Actions
 export const DO_SOMETHING = createActionName('DO_SOMETHING');
 

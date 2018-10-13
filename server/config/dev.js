@@ -12,7 +12,9 @@ module.exports = function createDevConfig(app) {
 		publicPath: webpackConfig.output.publicPath,
 		silent: true,
 		logLevel: 'warn',
-		stats: 'errors-only'
+		stats: 'errors-only',
+    hot: true,
+    historyApiFallback: true
 	}));
   
   app.use(webpackHotMiddleware(compiler));

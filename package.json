@@ -15,11 +15,13 @@
     "generate": "plop"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "chalk": "^2.4.1",
     "compression": "^1.7.3",
     "css-reset": "^0.0.1",
     "express": "^4.16.3",
+    "form-data": "^2.3.2",
     "history": "^4.7.2",
     "immutable": "^3.8.2",
     "lodash": "^4.17.10",

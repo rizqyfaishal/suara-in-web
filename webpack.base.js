@@ -4,7 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-	entry: path.resolve(__dirname, 'app', 'index.js'),
+	entry: [
+    'webpack-dev-server/client?http://0.0.0.0:3000', // WebpackDevServer host and port
+    'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors,
+    path.resolve(__dirname, 'app', 'index.js')
+  ],
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist'),
